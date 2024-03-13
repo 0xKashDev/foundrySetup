@@ -64,3 +64,13 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+
+
+
+
+
+Notes:
+
+1. https://www.youtube.com/watch?v=fNMfMxGxeag
+    will add commands to setup later today .. 
+    still need to finish following video ..
