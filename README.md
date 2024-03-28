@@ -74,3 +74,6 @@ Notes:
 1. https://www.youtube.com/watch?v=fNMfMxGxeag
     will add commands to setup later today .. 
     still need to finish following video ..
+
+2. Trying to test for right owner 
+3. Check constructer syntax (good)  in Mockerc20 

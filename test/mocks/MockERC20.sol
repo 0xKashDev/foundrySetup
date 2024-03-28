@@ -6,10 +6,19 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 
 contract MockERC20 is ERC20, Ownable {
-    constructor() ERC20 ("MOCK ERC20", "MERC") {
+
+    constructor() Ownable(msg.sender) ERC20 ("MOCK ERC20", "MERC") {
         _mint(msg.sender, 1000000e18);
         
     }
 
-   
+    modifier callerIsUser() {
+        require(tx.origin == msg.sender, "The caller is another contract");
+        _;
+    }
+
+    function CheckOwner() {
+
+    }
+
 }

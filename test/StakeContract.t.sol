@@ -28,4 +28,21 @@ contract StakeContractTest is Test {
         assertTrue(stakePassed);
 
     }
+
+    function checkOwner(address owner) public view returns(address){
+        owner = msg.sender;
+        //console.log(mockToken.owner());
+        return mockToken.owner();
+        //bool isOwner_ = mockToken.Owner();
+        //assertTrue(isOwner_);
+
+    }
+
+    /*
+    function testExample(uint8 amount) public {
+
+        mockToken.approve(address(stakeContract), amount);
+
+    }
+    */
 }
