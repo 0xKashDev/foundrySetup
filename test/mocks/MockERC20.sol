@@ -17,8 +17,13 @@ contract MockERC20 is ERC20, Ownable {
         _;
     }
 
-    function CheckOwner() {
-
+    function mockCheckOwner() public view returns(bool) {
+        bool isMockOwner = true;
+        if(msg.sender == this.owner()){
+            isMockOwner = false;
+        }
+       
+        return(isMockOwner);
     }
 
 }

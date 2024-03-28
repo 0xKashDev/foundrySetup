@@ -76,4 +76,6 @@ Notes:
     still need to finish following video ..
 
 2. Trying to test for right owner 
-3. Check constructer syntax (good)  in Mockerc20 
+3. Check constructer syntax (good) in Mockerc20 
+
+4. `https://www.razacodes.com/blog/foundry-intro-testing` check this link for owner test

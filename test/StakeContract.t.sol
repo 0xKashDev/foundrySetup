@@ -29,12 +29,10 @@ contract StakeContractTest is Test {
 
     }
 
-    function checkOwner(address owner) public view returns(address){
-        owner = msg.sender;
-        //console.log(mockToken.owner());
-        return mockToken.owner();
-        //bool isOwner_ = mockToken.Owner();
-        //assertTrue(isOwner_);
+    function checkOwner() public {
+        bool isOwner_ = mockToken.mockCheckOwner();
+        console.log(isOwner_);
+        assertTrue(isOwner_);
 
     }
 
